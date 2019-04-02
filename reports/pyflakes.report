@@ -1,0 +1,6 @@
+../dj/lib/python3.7/site-packages/django/contrib/messages/__init__.py:1: [E] PYFLAKES:'from django.contrib.messages.api import *' used; unable to detect undefined names
+../dj/lib/python3.7/site-packages/django/contrib/messages/__init__.py:1: [E] PYFLAKES:'django.contrib.messages.api.*' imported but unused
+../dj/lib/python3.7/site-packages/django/contrib/messages/__init__.py:2: [E] PYFLAKES:'from django.contrib.messages.constants import *' used; unable to detect undefined names
+../dj/lib/python3.7/site-packages/django/contrib/messages/__init__.py:2: [E] PYFLAKES:'django.contrib.messages.constants.*' imported but unused
+MyApp/models.py:1: [E] PYFLAKES:'django.db.models' imported but unused
+MyApp/admin.py:1: [E] PYFLAKES:'django.contrib.admin' imported but unused
