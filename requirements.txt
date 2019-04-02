@@ -1,0 +1,6 @@
+Django==2.2
+django-jenkins==0.110.0
+pep8==1.7.1
+pyflakes==2.1.1
+pytz==2018.9
+sqlparse==0.3.0
