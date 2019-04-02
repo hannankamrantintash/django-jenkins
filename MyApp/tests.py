@@ -6,3 +6,4 @@ class NoDbTestRunner(DiscoverRunner):
   def setup_databases(self, **kwargs):
     """ Override the database creation defined in parent class """
     assert True
+
