@@ -1,8 +1,12 @@
-from django.test.runner import DiscoverRunner
+from rest_framework import status
+from rest_framework.test import APITestCase
 
-class NoDbTestRunner(DiscoverRunner):
-  """ A test runner to test without database creation """
-
-  def setup_databases(self, **kwargs):
-    """ Override the database creation defined in parent class """
-    assert True
+class AccountTests(APITestCase):
+    def test_create_account(self):
+        """
+        Ensure we can create a new account object.
+        """
+        url = 'http://bingeserver-stage.us-east-2.elasticbeanstalk.com/users/login/'
+        response = self.client.post(url, format='json')
+        print(response)
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
