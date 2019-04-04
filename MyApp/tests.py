@@ -10,3 +10,4 @@ class AccountTests(APITestCase):
         response = self.client.post(url, format='json')
         print(response)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+
