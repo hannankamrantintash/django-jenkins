@@ -4,7 +4,7 @@ from rest_framework.test import APITestCase
 class AccountTests(APITestCase):
     def test_create_account(self):
         """
-        Ensure we can create a new account object.
+        Create new user.
         """
         url = 'http://bingeserver-stage.us-east-2.elasticbeanstalk.com/users/login/'
         response = self.client.post(url, format='json')
