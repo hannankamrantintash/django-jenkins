@@ -1,7 +1,7 @@
 from rest_framework import status
 from rest_framework.test import APITestCase
 
-class AccountTests(APITestCase):
+class UserTests(APITestCase):
     def test_create_account(self):
         """
         Create new user.
