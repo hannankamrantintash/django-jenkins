@@ -8,6 +8,5 @@ class UserTests(APITestCase):
         """
         url = 'http://bingeserver-stage.us-east-2.elasticbeanstalk.com/users/login/'
         response = self.client.post(url, format='json')
-        print(response)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
