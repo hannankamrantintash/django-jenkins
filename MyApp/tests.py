@@ -5,7 +5,7 @@ class UserTests(APITestCase):
     def test_create_account(self):
         """
         Create new user.
-        
+
         """
         url = 'http://bingeserver-stage.us-east-2.elasticbeanstalk.com/users/login/'
         response = self.client.post(url, format='json')
